@@ -1,2 +1,2 @@
-# Curso HTML5 e CSS3
- Repositório de estudos do Curso HTML5 e CSS3.
+# Exercícios do site Curso em Vídeo
+ Repositório de estudos dos Cursos realizados no site Curso em Vídeo do professor Gustavo Guanabara.
