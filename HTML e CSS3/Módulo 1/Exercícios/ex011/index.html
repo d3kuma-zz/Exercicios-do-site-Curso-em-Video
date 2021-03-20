@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mídias em HTML5</title>
-    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu
+        navegador.</p>
 
     <picture>
-        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png"> <!-- Aqui defino largura máxima de 750 px para foto pequena.  -->
-        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png"> <!-- Aqui defino largura máxima de 1000px para foto média. -->
+        <!-- Deve-se seguir a ordem das sources sempre da menor para maior, de cima para baixo. -->
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <!-- Aqui defino largura máxima de 750 px para foto pequena.  -->
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <!-- Aqui defino largura máxima de 1000px para foto média. -->
         <img src="imagens/foto-g.png" alt="Imagem flexível"> <!-- Foto grande é a padrão  -->
     </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/happy-mistake.mp3" controls autoplay></audio>
+    <!-- controls habilita o um player para reproduzir o seu áudio. -->
+    <!-- autoplay reproduz o áudio automaticamente, dependendo do navegador -->
+
+    <h1>Reproduzindo com vários tipos</h1>
+    <audio preload="metadata" controls> 
+        <!-- No argumento preload temos os seguintes argumentos: 
+            "" ou auto: carrega todo o conteúdo do site para depois executar o áudio; 
+            metadata: carrega informações do áudio (nome do arquivo, data, duração, etc.);
+            none: não começa a carregar, somente se clicar no botão play. -->
+            <!-- loop repete o áudio ao finalizá-lo -->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">    
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+    </audio>
+    <!-- O source segue a mesma lógica no picture, carregando sempre de cima para baixo-->
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
-
-
