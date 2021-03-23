@@ -11,11 +11,10 @@
 
     <picture>
         <!-- Deve-se seguir a ordem das sources sempre da menor para maior, de cima para baixo. -->
-        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
-        <!-- Aqui defino largura máxima de 750 px para foto pequena.  -->
-        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
-        <!-- Aqui defino largura máxima de 1000px para foto média. -->
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png"> <!-- Max-width da foto M + 50px -->
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png"> <!-- Max-width da foto G + 50px -->
         <img src="imagens/foto-g.png" alt="Imagem flexível"> <!-- Foto grande é a padrão  -->
+        <!-- A lógica do max-width é a seguinte: Minha largura da foto G é de 1000px. Sempre some 50 px a mais e coloque na foto menor. -->
     </picture>
 
     <h1>Reproduzindo Áudio</h1>
