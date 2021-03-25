@@ -17,6 +17,7 @@ main{
     /* box-shadow é o sombreado da borda externa sendo:
     1º sombra na frente, 2º embaixo, 3º quanto que espalha, 4º cor */
     width: 600px;
+    /* largura */
     padding: 10px;
     margin: auto; 
     /*margin:auto = centralizar independente do tamanho da janela */
