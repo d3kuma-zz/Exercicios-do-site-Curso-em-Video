@@ -27,6 +27,7 @@ h1{
     color: #F19205;
     text-align: center;
     text-shadow: 1px 1px 2px #aa6805a6;
+    /* text-shadow tem o mesmo sentido bo box-shadow, porém aplicado para o meu texto. */
 }
 
 h2{
