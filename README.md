@@ -21,8 +21,7 @@
 * Capítulo 6 Aula 3 – O tamanho das imagens importa para um site?
 * Capítulo 6 Aula 4 – A tag img em HTML5
 * Capítulo 6 Aula 5 – Como mudar o favicon de um site
-
-# Capítulo 7 Aula 1 – Hierarquia de Títulos
+* Capítulo 7 Aula 1 – Hierarquia de Títulos
 
 # Módulo 2
 
