@@ -2,7 +2,8 @@
  Repositório de estudos dos Cursos realizados no site Curso em Vídeo do professor Gustavo Guanabara.
 
 # Módulo 1
-# Capítulo 1 Aula 0 – O que vamos aprender no módulo 01?
+
+* Capítulo 1 Aula 0 – O que vamos aprender no módulo 01?
 
 # Capítulo 1 Aula 1 – Precisamos fazer um acordo
 
