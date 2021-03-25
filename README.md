@@ -3,6 +3,8 @@
 
 # Módulo 1
 * 1 - Tema 1
+* 1 - Tema 2
 
 # Módulo 2
 * 1 - Tema 1
+* 1 - Tema 2
