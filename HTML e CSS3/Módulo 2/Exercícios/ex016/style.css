@@ -7,6 +7,7 @@
 
 body{
     background-image: linear-gradient(to bottom, #EFD9C6, #EFC3A6 );
+    /* Estilo da minha tag body. Usamos background-image invés de background-color */
 }
 
 main{
