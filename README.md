@@ -25,5 +25,13 @@
 # Capítulo 7 Aula 1 – Hierarquia de Títulos
 
 # Módulo 2
-* 1 - Tema 1
-* 1 - Tema 2
+
+* Capítulo 13 Aula 1 – Cores
+* Capítulo 13 Aula 2 – Representação de cores
+* Capítulo 13 Aula 3 Parte 1 – Harmonização de cores
+* Capítulo 13 Aula 4 Parte 2 – Harmonização de cores
+* Capítulo 13 Aula 5 – Captura de cores
+* Capítulo 13 Aula 6 – Cores em CSS
+* Capítulo 13 aula 7 – Criando um site harmônico
+* Capítulo 14 aula 1 – Tipografia (parte 1)
+* Capítulo 14 aula 2 – Tipografia (parte 2)
