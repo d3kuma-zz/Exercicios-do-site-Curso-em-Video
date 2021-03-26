@@ -1,7 +1,9 @@
 # Exercícios do site Curso em Vídeo
  Repositório de estudos dos Cursos realizados no site Curso em Vídeo do professor Gustavo Guanabara.
 
-# Módulo 1
+# [Módulo 1]
+
+[Link da playlist](https://www.youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n)
 
 * Capítulo 1 Aula 0 – O que vamos aprender no módulo 01?
 * Capítulo 1 Aula 1 – Precisamos fazer um acordo
@@ -24,6 +26,8 @@
 * Capítulo 7 Aula 1 – Hierarquia de Títulos
 
 # Módulo 2
+
+[Link da playlist](https://www.youtube.com/playlist?list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s)
 
 * Capítulo 13 Aula 1 – Cores
 * Capítulo 13 Aula 2 – Representação de cores
