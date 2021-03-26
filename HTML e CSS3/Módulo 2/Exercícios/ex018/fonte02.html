@@ -7,19 +7,34 @@
     <title>Fontes externas</title>
     <style>
         @font-face {
-            font-family: ;
-            src: url();
+            font-family: 'Love' ;
+            src: 
+            url('fonts/love\ larry.otf') format('opentype'), url('fonts/love\ larry.otf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+        /* 1  
+            Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+        */
         }
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
         h1{
-            font-family: 'Times New Roman', Times, serif;
+            /* Podemos apelidar a fonte e usá-la como seu nome*/
+            font-family: 'Love', Times, serif;
             font-size: 3em;
+            font-weight: normal;
         }
     </style>
 </head>
 <body>
-    
+    <h1>Olá, Mundo!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum natus, eligendi sequi voluptatum eius blanditiis voluptatibus aut quas itaque dolores ullam reprehenderit fuga, adipisci corporis commodi. Quas corporis quisquam nesciunt.</p>
 </body>
 </html>
