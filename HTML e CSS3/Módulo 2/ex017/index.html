@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        /* Font-family tem fontes pré-determinadas, chamadas de CSS Web Safe Fonts. O último argumento é sempre o tipo dela (serifado, sans-serif, monoespaçada, etc.) */
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /* Medidas absolutas: cm, mm, in, px, pt, pc*/
+            /* Medidas relativas: 
+            em: Tamanho atual da fonte com referência de um M.
+            ex: Tamanho atual da fonte com referência de um x.
+            rem: Tamanho atual da fonte com referência ao root (fonte configurada no body).
+            vw: Viewport width. Relativo à largura da tela de seu dispositivo.
+            vh: Viewport height. Relativo à altura da tela de seu dispositivo;
+            %: Resolução de acordo com a porcentagem.
+            */
+            /* Tenha costume de usar unidades em px ou em
+            16px geralmente = 1em
+            */
+            font-size: 1em;
+            font-weight: bolder;
+            /* variações literais: lighter normal bold bolder */
+            /* variações numéricas: 100 a 900 */
+            font-style: italic;
+            /* estilo das fontes: (normal, italic) */
+            text-decoration: underline;
+            /* decoração do texto (underline) */
+        }
+
+        h1{
+            font: bolder 3em italic 'Work Sans', sans-serif;
+            /* shorthand font
+                font-style -> font-weight -> font-size -> font-family    
+            */
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Trabahando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita atque cupiditate ipsum alias sed repellat minus
+        adipisci quas architecto illum quisquam excepturi officia perspiciatis doloremque, nisi aut voluptate possimus.
+        Maiores.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam minima ipsa obcaecati nulla earum at
+        cupiditate iste in aut expedita voluptates voluptatum quasi, sed fugit. Architecto vitae quaerat corrupti dolor.
+    </p>
+    <h2>Subtítulo de exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum molestias repellat doloribus beatae odio.
+        Voluptates, dolore totam qui mollitia neque sequi alias! Sint, corrupti? Consectetur neque nobis aliquam quia
+        beatae.</p>
+</body>
+
+</html>
