@@ -1,7 +1,7 @@
 # Exercícios do site Curso em Vídeo
  Repositório de estudos dos Cursos realizados no site Curso em Vídeo do professor Gustavo Guanabara.
 
-# [Módulo 1]
+# Módulo 1
 
 [Link da playlist](https://www.youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n)
 
