@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 40px;
+
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        // document.write escreve o conteúdo na página
+        // Ele aceita tags dentro dos parênteses para estilizar o texto
+        document.write(`<p>Olá <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.<br></p>`)
+        document.write(`<p>Seu nome em maiúsculo é <strong>${nome.toUpperCase()}</strong><br></p>`)
+        document.write(`<p>Seu nome em maiúsculo é <strong>${nome.toLowerCase()}</strong><br></p>`)
+    </script>
+</body>
+</html>
