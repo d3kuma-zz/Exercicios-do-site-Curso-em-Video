@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de nacionalidade</title>
+</head>
+<body>
+    <h1>Consultar nacionalidade</h1>
+    <input type="text" name="nac" id="nac">
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div id='msg'><p></p></div>
+    <script>
+
+        function clicar(){
+            var txtnac = document.querySelector('input#nac')
+            var msg = document.querySelector('div#msg')
+            var op = String(txtnac.value).toLowerCase()
+            if (op == 'br'){
+                msg.innerHTML = `Sua nacionalidade: Brasileiro`
+            }else if (op == 'us') {
+                msg.innerHTML = `Sua nacionalidade: Americano`
+            }else{
+                msg.innerHTML = `Sua nacionalidade: N/A`
+            }
+    }
+    </script>
+</body>
+</html>
