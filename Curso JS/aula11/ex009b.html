@@ -8,14 +8,19 @@
 </head>
 <body>
     <h1>Consultar nacionalidade</h1>
+    <!-- Caixa de texto -->
     <input type="text" name="nac" id="nac">
+    <!-- Botão que chama a função clicar() -->
     <input type="button" value="Verificar" onclick="clicar()">
     <div id='msg'><p></p></div>
     <script>
 
         function clicar(){
+            // Variável que seleciona o texto digitado
             var txtnac = document.querySelector('input#nac')
+            // Variável que seleciona a div que vai aparecer a mensagem
             var msg = document.querySelector('div#msg')
+            // Variável que recebe a string do input type
             var op = String(txtnac.value).toLowerCase()
             if (op == 'br'){
                 msg.innerHTML = `Sua nacionalidade: Brasileiro`
