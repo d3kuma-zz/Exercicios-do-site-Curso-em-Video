@@ -1,0 +1,33 @@
+body{
+    background: #4083D6;
+    font: normal 15pt Arial;
+}
+
+header{
+    color: white;
+    text-align:center;
+
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    /* espaçamento interno do texto */
+    padding: 15px;
+    /* largura da div */
+    width: 500px;
+    /* alinhamento centralizado */
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+div{
+    /* text-align: center; */
+    padding: 5px;
+}
+
+footer{
+    color: white;
+    text-align:center;
+    font-style: italic;
+}
