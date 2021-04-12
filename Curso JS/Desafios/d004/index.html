@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula Troco</title>
+</head>
+<body>
+    <h1>Calculando o Troco</h1>
+    <input type="button" value="Comprar produto" onclick="calcula()">
+
+    <script>
+function calcula(){
+        prod = prompt("Que produto você está comprando?")
+        val = Number(prompt("Quanto custa " + prod + " que você está comprando?"))
+        din = Number(prompt("Qual foi o valor que você deu para pagar " + prod))
+        if (din - val < 0){
+            alert("Valor pago menor que o valor do produto")
+        }else{
+            troco = din - val
+            val.toFixed(2)
+            din.toFixed(2)
+            troco.toFixed(2)
+            alert("Você comprou " + prod + " que custou R$ " + val +".\n" +
+            "Deu R$ " + din + " em dinheiro e vai receber R$ " + troco + " de troco. \nVolte Sempre!"   )
+        }
+        
+       
+      
+    }
+        
+
+    </script>
+</body>
+</html>
