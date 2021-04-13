@@ -14,7 +14,7 @@ h1{
     color:rgb(4, 109, 0);
 }
 
-/* Posso usar apenas "#principal" para usar o id criado. Ele pode ser aplicado para qualquer tag. */
+/* Perceba que estou atribuindo o id principal à tag h1. Ela vai sobrepor o estilo da tag h1 acima. */
 h1#principal{
     text-align: center;
     background-color: rgb(4, 109, 0);
@@ -23,4 +23,22 @@ h1#principal{
 
 h2{
     color: rgb(73, 109, 71);
+}
+
+/* O seletor class sempre deve ter um ponto antes de seu nome */
+.basico{
+    color:rgb(4, 109, 0);
+    font-weight: bold;
+}
+
+.intermediario{
+    color: rgb(228, 228, 11);
+}   
+
+.avancado{
+    color: rgb(153, 6, 6);
+}
+
+.destaque{
+    background-color: rgba(145, 145, 81, 0.425);
 }
