@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor R$ -> US$</title>
+</head>
+<body>
+    <h1>Conversor R$ -> US$</h1>
+    <input type="button" value="Converter" onclick="converter()">
+    <p class="res">Clique no botão acima para iniciar.</p>
+    <script>
+        function converter(){
+            let dol = Number(prompt("Antes de mais nada, quanto está a cotação do dólar agora?"))
+            let brl = Number(prompt("Quantos R$ você tem na carteira?"))
+            let res = document.getElementsByClassName("res")[0]
+            let d = new Date()
+            res.innerHTML = `R$ ${(brl).toFixed(2)} equivalem a US$ ${(brl / dol).toFixed(2)} na cotação de ${d.getDate()}/${d.getMonth()+1}/${d.getFullYear()}.`
+        }
+    </script>
+</body>
+</html>
