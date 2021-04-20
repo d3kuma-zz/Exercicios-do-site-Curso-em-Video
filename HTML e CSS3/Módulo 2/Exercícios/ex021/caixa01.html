@@ -7,28 +7,45 @@
     <title>Modelo de caixas</title>
     <style>
         h1{
-            /* Estilo de borda */
+            /* box-level */
+
             border-color: lightgray;
             height: 300px;
             width: 300px;
-            border-width: 10px;
-            border-style: solid;
-            border-color: darkslategray;
+            
+            /* shorthand para a border */
+            /* siga a ordem: width style color */
+            border: 10px solid darkslategray;
 
-            /* Estilo do preenchimento entre borda e texto */
-            padding-top: 10px;
-            padding-right: 10px;
-            padding-bottom: 10px;
-            padding-left: 10px;
-                    
+
+            /* shorthand para padding */
+            /* se vc colocar 1 medida, ele entende q todas são iguais */
+            /* padding: 10px = 4 lados com 10px */
+
+            /* se vc colocar 2 medidas, vai igualar medidas da largura e altura */
+            /* padding: 20px 40px; */
+            /* cima e baixo com 20px e lados com 40px */
+
+            padding: 10px;
+
+            /* deixa o conteúdo centralizado */
+            /* margin: auto; */
+            
+            /* Se eu quiser centralizar apenas os lados, use auto nessas medidas  */
+
+            margin: 10px auto 50px auto;
+
+           /* shorthand de outline é igual ao do padding */
+            outline: 5px dashed salmon;
         }
 
         a{
+            /* inline-level */
             border-width: 10px;
             border-style: solid;
             border-color: red;
 
-            padding: 10px 10px 10px 10px;
+            padding: 10px;
 
         }
     </style>
