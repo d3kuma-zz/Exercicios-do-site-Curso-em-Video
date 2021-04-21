@@ -13,12 +13,13 @@
     <p></p>
     <script>
         function verificar(){
+            
             let ano = Number(prompt("Qual é o ano que você quer verificar?"))
             let res = document.getElementById("res")
-            if ((ano % 400 == 0) || (ano % 100 != 0 && ano % 4 == 0)){
-                res.innerHTML = `O ano de ${ano} <span style="background-color: #E28783">NÃO É BISSEXTO &#x274C;</span>`
-            }else{
+            if ((ano % 400 == 0) || (ano % 4 == 0 && ano % 100 != 0 && ano % 400 != 0)){
                 res.innerHTML = `O ${ano} <span style="background-color: #A6EB9A">É BISSEXTO &#x2705;</span>`
+            }else{
+                res.innerHTML = `O ano de ${ano} <span style="background-color: #E28783">NÃO É BISSEXTO &#x274C;</span>`
             }
         }
     </script>
