@@ -5,6 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ano Bissexto</title>
+    <style>
+        span{
+            font-weight: bold;
+        }
+
+        span#green{
+            background-color: lightgreen;
+            color: green;
+        }
+
+        span#red{
+            background-color: rgb(245, 165, 157);
+            color: rgb(175, 3, 3);
+        }
+
+    </style>
 </head>
 <body>
     <h1>Ano Bissexto</h1>
@@ -17,9 +33,9 @@
             let ano = Number(prompt("Qual é o ano que você quer verificar?"))
             let res = document.getElementById("res")
             if ((ano % 400 == 0) || (ano % 4 == 0 && ano % 100 != 0 && ano % 400 != 0)){
-                res.innerHTML = `O ${ano} <span style="background-color: #A6EB9A">É BISSEXTO &#x2705;</span>`
+                res.innerHTML = `O ${ano} <span id="green">É BISSEXTO &#x2705;</span>`
             }else{
-                res.innerHTML = `O ano de ${ano} <span style="background-color: #E28783">NÃO É BISSEXTO &#x274C;</span>`
+                res.innerHTML = `O ano de ${ano} <span id="red">NÃO É BISSEXTO &#x274C;</span>`
             }
         }
     </script>
