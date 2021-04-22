@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situação do aluno</title>
+    <style>
+        span{
+            font-weight: bold;
+        }
+
+        span#green{
+            color: green;
+            background-color: lightgreen;
+        }
+
+        span#yellow{
+            color: goldenrod;
+            background-color: yellow;
+        }
+
+        span#red{
+            color: red;
+            background-color: rgb(232, 178, 178);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Situação do aluno</h1>
+    <input type="button" value="Entrar com as notas" onclick="sit()">
+    <p id="res">Clique no botão acima para informar as notas do aluno.</p>
+    <script>
+        function sit(){
+        // let nome = prompt("Qual é o nome do aluno(a)?")
+
+        let nome = "Andre"
+        let n1 = Number(prompt(`Primeira nota de ${nome}.`))
+        let n2 = Number(prompt(`Segunda nota de ${nome}.`))
+        let n3 = Number(prompt(`Terceira nota de ${nome}.`))
+        let res = document.getElementById("res")
+        let media = ((n1+n2+n3)/3).toFixed(1)
+        res.innerHTML = `Com as notas ${n1}, ${n2} e ${n2}, a <strong>média é ${media}</strong>`
+        if (media >=6){
+            res.innerHTML += `<p>Com média acima de 6.0, o aluno está <span id="green">APROVADO</span></p>`
+        }else if(media >= 3){
+            res.innerHTML += `<p>Com média entre 3.0 e 6.0, o aluno está em <span id="yellow">RECUPERAÇÃO</span></p>`
+        }else{
+            res.innerHTML += `<p>Com média abaixo de 3.0, o aluno está <span id="red">REPROVADO</span></p>`
+        }
+    }
+
+    </script>
+</body>
+</html>
