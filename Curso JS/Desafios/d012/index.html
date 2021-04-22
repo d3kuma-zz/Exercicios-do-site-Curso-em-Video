@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preço mudou</title>
+</head>
+<body>
+    <h1>Preço mudou</h1>
+    <input type="button" value="Verificar" onclick="verif()">
+    <p id="res">Clique no botão acima para analisar a mudança de preço.</p>
+    <script>
+        function verif(){
+            let antigo = Number(prompt("Qual era o preço anterior do produto?"))
+            let atual = Number(prompt("Qual é o preço atual do produto?"))
+            let res = document.getElementById("res")
+            res.innerHTML = "<h1>Analisando os valores informados</h1>"
+            res.innerHTML += `O produto custava R$ ${antigo} e agora custa R$ ${atual}.`
+            if (atual > antigo){
+                res.innerHTML += `<p>Hoje o produto está mais caro</p>`
+                res.innerHTML += `<p>O preço subiu R$ ${(atual - antigo).toFixed(2)} em relação ao preço anterior.</p>`
+                res.innerHTML += `<p>Uma variação de ${((atual - antigo)/antigo*100).toFixed(2)}% pra cima.`}else if (antigo > atual) {
+                res.innerHTML += `<p>Hoje o produto está mais barato</p>`
+                res.innerHTML += `<p>O preço caiu R$ ${(antigo - atual).toFixed(2)} em relação ao preço anterior.</p>`
+                res.innerHTML += `<p>Uma variação de ${((antigo - atual)/atual*100).toFixed(2)}% pra baixo.</p>`
+                }else{
+                    res.innerHTML +=  `<p>O preço continuou o mesmo.</p>`
+                }
+
+            } 
+
+
+    </script>
+</body>
+</html>
