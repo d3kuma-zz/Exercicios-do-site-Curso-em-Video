@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fórmula de Bhaskara</title>
+    <style>
+        span{
+            font-weight: bold;
+            background-color: yellow;
+        }
+    </style>
 </head>
 <body>
     <h1>Resolvendo Bhaskara</h1>
@@ -18,7 +24,7 @@
         let delta = b*b - 4 * a * c
 
         let res = document.getElementById("res")
-        res.innerHTML = `A equação atual é <strong>${a}x² + ${b} + ${c} = 0</strong><p>O cálculo realizado será <strong>&Delta; = ${b}² - 4 . ${a} . ${c}</strong></p><p>O valor calculado foi <span style="background-color: yellow; font-weight: bold;">&Delta; = ${delta}</span>.`
+        res.innerHTML = `A equação atual é <strong>${a}x² + ${b} + ${c} = 0</strong><p>O cálculo realizado será <strong>&Delta; = ${b}² - 4 . ${a} . ${c}</strong></p><p>O valor calculado foi <span>&Delta; = ${delta}</span>.`
         }
     </script>
 </body>
