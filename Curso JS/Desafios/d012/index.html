@@ -20,11 +20,14 @@
             if (atual > antigo){
                 res.innerHTML += `<p>Hoje o produto está mais caro</p>`
                 res.innerHTML += `<p>O preço subiu R$ ${(atual - antigo).toFixed(2)} em relação ao preço anterior.</p>`
-                res.innerHTML += `<p>Uma variação de ${((atual - antigo)/antigo*100).toFixed(2)}% pra cima.`}else if (antigo > atual) {
+                res.innerHTML += `<p>Uma variação de ${((atual - antigo)/antigo*100).toFixed(2)}% pra cima.`}
+                    
+            else if (antigo > atual) {
                 res.innerHTML += `<p>Hoje o produto está mais barato</p>`
                 res.innerHTML += `<p>O preço caiu R$ ${(antigo - atual).toFixed(2)} em relação ao preço anterior.</p>`
                 res.innerHTML += `<p>Uma variação de ${((antigo - atual)/atual*100).toFixed(2)}% pra baixo.</p>`
-                }else{
+                }
+            else{
                     res.innerHTML +=  `<p>O preço continuou o mesmo.</p>`
                 }
 
